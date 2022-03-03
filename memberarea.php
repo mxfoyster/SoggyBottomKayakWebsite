@@ -22,8 +22,8 @@ if ( isset( $_SESSION['username'] ) ) {
 	<link rel="stylesheet" type="text/css" href="css/menuStyle.css" />
 	<link rel="stylesheet" type="text/css" href="css/loginBox.css" />
 	<script src="include/jquery.js"></script> 
-	<script src="include/index.js" defer></script> 
-
+	<script src="include/index.js" defer></script>
+	
 </head>
 
 <body>
@@ -36,6 +36,11 @@ if ( isset( $_SESSION['username'] ) ) {
     <?php include_once("include/header.php"); ?>
   </div>
   
+  <!--Let's turn our login to a logout-->
+   <script type="text/javascript">
+	document.getElementById("login").innerHTML="Log Out";
+   </script>	
+
   <!--Left box-->
   <div class="left" style="background-color:#777;">
   <?php include_once("include/leftbox.php"); ?>

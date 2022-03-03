@@ -4,7 +4,7 @@
 // Always start this first
 session_start();
 
-if ( isset( $_SESSION['user_id'] ) ) {
+if ( isset( $_SESSION['username'] ) ) {
     // Grab user data from the database using the user_id
     // Let them access the "logged in only" pages
 } else {
@@ -22,8 +22,8 @@ if ( isset( $_SESSION['user_id'] ) ) {
 	<link rel="stylesheet" type="text/css" href="css/menuStyle.css" />
 	<link rel="stylesheet" type="text/css" href="css/loginBox.css" />
 	<script src="include/jquery.js"></script> 
-	<script src="include/index.js" defer></script> 
-
+	<script src="include/index.js" defer></script>
+	
 </head>
 
 <body>
@@ -36,6 +36,9 @@ if ( isset( $_SESSION['user_id'] ) ) {
     <?php include_once("include/header.php"); ?>
   </div>
   
+  <!--Let's turn our login to a logout-->
+  <style type="text/css"> document.getElementById("login").innerHTML="Log Out</style>	
+
   <!--Left box-->
   <div class="left" style="background-color:#777;">
   <?php include_once("include/leftbox.php"); ?>

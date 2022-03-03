@@ -40,5 +40,8 @@ function goEquipment()
 
 function goLogin()
 {
-CallCustomAlert ("Log into Members Area");
+	if (document.getElementById("login").innerHTML !="Log Out")
+		CallCustomAlert ("Log into Members Area");
+	else
+		window.location = "include/logout.php"
 }

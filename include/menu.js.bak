@@ -40,5 +40,8 @@ function goEquipment()
 
 function goLogin()
 {
-CallCustomAlert ("Not enough goes left ");
+	if (document.getElementById("login").innerHTML !="Log Out")
+		CallCustomAlert ("Log into Members Area");
+	else
+		window.location = "logout.php"
 }
