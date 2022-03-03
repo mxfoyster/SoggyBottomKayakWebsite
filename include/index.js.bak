@@ -1,0 +1,11 @@
+const alertBtn = document.querySelector('input[name="getLoginSubmit"]'); //our 'OK' button for custom alert box
+
+
+
+//Call our custom alert box (set to visible) and display the text sent in the parameter
+function CallCustomAlert (message /*,refreshAfter*/)
+{
+	document.getElementById("ourLoginBoxCNT").style.visibility="visible";
+	document.getElementById("loginText").innerHTML = message;	
+	//if (refreshAfter) toReload=true;
+}

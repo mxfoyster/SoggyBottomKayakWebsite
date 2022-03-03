@@ -1,0 +1,33 @@
+/* Our CSS for the custom alert box. Will be extracted to a separate sheey=t later me thinks :-D */
+.ourAlertBox
+{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	background-color: linen;
+	border-radius: 25px;
+	border: 3px solid mediumblue;
+	padding: 20px;
+	text-align: center;
+	width: 250px;
+	height: 150px;	
+	transform: translate(-50%, -50%);
+	visibility: hidden;
+}
+
+.ourAlertMessage
+{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.ourAlertOK
+{
+	position: absolute;
+	bottom: 6%;
+	left: 50%;
+	transform: translate(-50%, -50%);/* Fast becoming by favourite bit of css allowing for dimensions of element */
+}
+/* End of custome alert box css */

@@ -6,11 +6,17 @@
 	<meta name="description" content="">
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" type="text/css" href="css/menuStyle.css" />
+	<link rel="stylesheet" type="text/css" href="css/loginBox.css" />
+	<script src="include/jquery.js"></script> 
+	<script src="include/index.js" defer></script> 
 
 </head>
 
 <body>
+
+
 <div class="grid-container">
+
   <!--Header box-->
   <div class="header">
     <?php include_once("include/header.php"); ?>
@@ -23,19 +29,26 @@
 
   <!--Main centre box-->
   <div class="middle" style="background-color:#999;">
-	<h3>Welcome</h3>
-	<p>Welcome to Soggy Bottom Kayak Club. We love our kayaks but we use Paddleboards and Canoes too. 
-	In fact, if you can paddle it, we can teach it.</p>
-	<p>Set in the heart of the Peak District in Derbyshire, Soggy Bottom Kayak club is based in the 
-	village of Moist Derrierre and has some 200 members.</p>
-	<p>To learn more about our kayak club, just use the menu at the top to browse through our website.</p>
+	
+	<!-- Our custom login box code here -->
+	<span class="ourLoginBox" id="ourLoginBoxCNT">
+	<span class="ourLoginMessage" id="loginText">Test Text in our alert box</span>
+	<input class = "ourLoginSubmit" type="button" name="getLoginSubmit" value="SUBMIT"/>
+  
+  <!--using Jquery to load our middle box content-->
+  <script type="text/javascript">
+	  $(function()
+	  {
+		  $("#middle-dest").load("home.html"); 
+	  });
+  </script>
+  
+  <span id="middle-dest"></span>
   </div>  
 
   <!--Right box-->
   <div class="right" style="background-color:#aaa;">
-	<h3>Latest Weather</h3>
-	<a href="https://www.metoffice.gov.uk/public/weather/mountain-forecasts/peak-district" class="metoffice-mountain-forecast" data-theme="dark">Peak District Mountain Forecast</a>
-	<script type="text/javascript" src="//www.metoffice.gov.uk/public/pws/components/mountain/loader.js"></script>
+  <?php include_once("include/rightbox.php"); ?>
   </div>
   
   <!--Footer box-->
