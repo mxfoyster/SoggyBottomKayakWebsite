@@ -1,3 +1,17 @@
+<?php
+// You'd put this code at the top of any "protected" page you create
+
+// Always start this first
+session_start();
+
+if ( isset( $_SESSION['username'] ) ) {
+    // Grab user data from the database using the user_id
+    // Let them access the "logged in only" pages
+} else {
+    // Redirect them to the login page
+    header("Location: index.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,16 +47,9 @@
 	<!-- Our custom login box code here -->
 	<span class="ourLoginBox" id="ourLoginBoxCNT">
 	<span class="ourLoginMessage" id="loginText">Test Text in our alert box</span>
-	<input class = "ourLoginSubmit" type="button" name="getLoginSubmit" value="SUBMIT"/>
 	</span>
-  <!--using Jquery to load our middle box content-->
-  <script type="text/javascript">
-	  $(function()
-	  {
-		  $("#middle-dest").load("home.html"); 
-	  });
-  </script>
-  
+ 
+  <p>Members Area</p>
   <span id="middle-dest"></span>
   </div>  
 
