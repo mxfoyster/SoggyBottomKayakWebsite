@@ -55,6 +55,14 @@ if ( isset( $_SESSION['username'] ) ) {
 	</span>
  
   <p>Members Area</p>
+  <table class="memberDataTable" style="width: 100%; text-align: center; border-style: inset;">
+	<tr>
+	<td style="width: 33%">NEWS</td><td style="width: 33%">EVENTS</td><td style="width: 34%">MEETING MUNUTES</td>
+	</tr>
+	<tr>
+	<td><hr/><br/>Test News</td><td><hr/><br/>Test Event</td><td><hr/><br/>Test Minutes</td>
+	</tr>
+  </table>
   <span id="middle-dest"></span>
   </div>  
 

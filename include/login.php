@@ -26,7 +26,8 @@ try
 		{
 			//get our login details
 			$uname = $_POST['uName'];
-			$pwd = $_POST['pwd'];
+			$rawpwd = $_POST['pwd'];
+			$pwd=sha1("\$penguin\$" . $rawpwd);
 	
 			//strip anything dodgy from our username and password
 			$uname = EscapeInput ($conn,$uname); 
