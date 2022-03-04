@@ -33,7 +33,6 @@
 	<!-- Our custom login box code here -->
 	<span class="ourLoginBox" id="ourLoginBoxCNT">
 	<span class="ourLoginMessage" id="loginText">Test Text in our alert box</span>
-	<input class = "ourLoginSubmit" type="button" name="getLoginSubmit" value="SUBMIT"/>
 	</span>
   <!--using Jquery to load our middle box content-->
   <script type="text/javascript">

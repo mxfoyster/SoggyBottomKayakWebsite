@@ -11,7 +11,7 @@
 
 	<div class="menu-opt" id="equipment">Club Equipment</div>
 
-	<div class="menu-opt" id="login">Member Login</div>
+	<div id="login" class="menu-opt" id="login">Member Login</div>
 
 </div>
 <script src="include/menu.js" defer></script>

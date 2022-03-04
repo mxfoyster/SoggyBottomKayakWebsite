@@ -20,9 +20,10 @@ if ( isset( $_SESSION['username'] ) ) {
 	<meta name="description" content="">
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" type="text/css" href="css/menuStyle.css" />
-	<link rel="stylesheet" type="text/css" href="css/loginBox.css" />
+	
+	<!-- The next stylesheet gresy out our redundant menu options as we are in the members area -->
+	<link rel="stylesheet" type="text/css" href="css/menuItemsGreyout.css" />
 	<script src="include/jquery.js"></script> 
-	<script src="include/index.js" defer></script>
 	
 </head>
 
@@ -59,8 +60,8 @@ if ( isset( $_SESSION['username'] ) ) {
 	<tr>
 	<td style="width: 33%">NEWS</td><td style="width: 33%">EVENTS</td><td style="width: 34%">MEETING MUNUTES</td>
 	</tr>
-	<td><hr/><br/>Test News</td><td><hr/><br/>Test Event</td><td><hr/><br/>Test Minutes</td>
 	<tr>
+	<td><hr/><br/>Test News</td><td><hr/><br/>Test Event</td><td><hr/><br/>Test Minutes</td>
 	</tr>
   </table>
   <span id="middle-dest"></span>

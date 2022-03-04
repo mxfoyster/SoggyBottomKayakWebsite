@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/menuStyle.css" />
 	<link rel="stylesheet" type="text/css" href="css/loginBox.css" />
 	<script src="include/jquery.js"></script> 
-	<script src="include/index.js" defer></script> 
+	<script src="include/login.js" defer></script> 
 
 </head>
 

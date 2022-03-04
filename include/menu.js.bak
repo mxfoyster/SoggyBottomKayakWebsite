@@ -4,37 +4,50 @@ document.getElementById("why").addEventListener("click", goWhy);
 document.getElementById("equipment").addEventListener("click", goEquipment);
 document.getElementById("login").addEventListener("click", goLogin);
 
+
+//we have evaluated we are NOT in members area BEFORE allowing content to load in each function
 function goHome()
 {
-	$(function()
-	  {
-		  $("#middle-dest").load("\home.html"); 
-	  });
-	
+	if (document.getElementById("login").innerHTML !="Log Out")
+	{	
+		$(function()
+		{
+			$("#middle-dest").load("\home.html"); 
+		});
+	}
 }
 
 function goJoin()
 {
-	$(function()
-	  {
-		  $("#middle-dest").load("\joinus.html"); 
-	  });
+	if (document.getElementById("login").innerHTML !="Log Out")
+	{	
+		$(function()
+		{
+			$("#middle-dest").load("\joinus.html"); 
+		});
+	}
 }
 
 function goWhy()
 {
-	$(function()
-	  {
-		  $("#middle-dest").load("\why.html"); 
-	  });
+	if (document.getElementById("login").innerHTML !="Log Out")
+	{
+		$(function()
+		{
+			$("#middle-dest").load("\why.html"); 
+		});
+	}
 }
 
 function goEquipment()
 {
-	$(function()
-	  {
-		  $("#middle-dest").load("\equip.html"); 
-	  });
+	if (document.getElementById("login").innerHTML !="Log Out")
+	{
+		$(function()
+		{
+			$("#middle-dest").load("\equip.html"); 
+		});
+	}
 	
 }
 
@@ -43,5 +56,5 @@ function goLogin()
 	if (document.getElementById("login").innerHTML !="Log Out")
 		CallCustomAlert ("Log into Members Area");
 	else
-		window.location = "logout.php"
+		window.location = "include/logout.php";
 }
