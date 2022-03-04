@@ -1,6 +1,6 @@
 
 //Call our custom alert box (set to visible) and display the text sent in the parameter
-function CallCustomAlert (message /*,refreshAfter*/)
+function CallCustomAlert (message)
 {
 	loginform ="<br/><br/><form name=\"\" method=\"post\" action=\"include/login.php\">";
 	loginform +="<label for=\"\">Username</label>&nbsp;&nbsp;<input type=\"text\" name=\"uName\" value=\"\" id=\"unameID\" maxlength=\"30\" />";

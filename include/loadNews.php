@@ -15,7 +15,7 @@ if ( isset( $_SESSION['username'] ) )
 		$conn = SetUpConnection($dbase);
 		//we're going to format the date from within the query using the DATE_FORMAT method within MySQL
 		// using order by and DESC, we can make sure they appear most recent first.
-		$sql = "select title, DATE_FORMAT(date, '%d/%m/%Y') as date from news order by date DESC;";
+		$sql = "select ID,article, title, DATE_FORMAT(date, '%d/%m/%Y') as date from news order by date DESC;";
 		$error = ""; //Variable for storing our errors.
 		$result = mysqli_query($conn,$sql); //do the query
 	
@@ -24,7 +24,7 @@ if ( isset( $_SESSION['username'] ) )
 			//everything's OK, so we can display what data we have here
 			while ($row = mysqli_fetch_assoc($result))
 				{
-					echo "<h4>" . $row['date'] ."</h4>". $row['title']. " <br/><hr/>";
+					echo "<div class =\"articles\" id=\"newsArticle\"".$row['ID']."  onclick= \"CallArticleBox('" . $row['ID'] . "')\"><h4 class =\"articles\" >" . $row['date'] ."</h4>". $row['title']. " <br/></div><hr/>";
 				}
 			return true;	
 		}

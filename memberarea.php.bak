@@ -21,14 +21,21 @@ if ( isset( $_SESSION['username'] ) ) {
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" type="text/css" href="css/menuStyle.css" />
 	<link rel="stylesheet" type="text/css" href="css/memberAreaDataStyle.css" />
+	<link rel="stylesheet" type="text/css" href="css/articleBox.css" />
 	<!-- The next stylesheet gresy out our redundant menu options as we are in the members area -->
 	<link rel="stylesheet" type="text/css" href="css/menuItemsGreyout.css" />
 	<script src="include/jquery.js"></script> 
+	<script src="include/articleBox.js" defer></script> 
 	
 </head>
 
 <body>
-
+ 
+  <!-- This is our hidden article box -->
+  <span class="ourArticleBox" id="ourArticleBoxCNT">
+	<span class="ourArticleText" id="alertText">Test Text in our alert box</span>
+	<input class = "ourArticleExit" type="button" name="closeArticle" value="EXIT"/>
+  </span>
 
 <div class="grid-container">
 
@@ -52,20 +59,22 @@ if ( isset( $_SESSION['username'] ) ) {
 	
  
   <p>Members Area</p>
+ 
+  
   <table class="memberDataTable">
 	<tr>
 	<td style="width: 33%">NEWS</td><td style="width: 33%">EVENTS</td><td style="width: 34%">MEETING MINUTES</td>
 	</tr>
 	<tr>
-	<td><hr/><br/>
+	<td>
 	
 	<!-- We can load our news into here -->
 	<?php include_once("include/loadNews.php"); ?>
-	</td><td><hr/><br/>
+	</td><td>
 	
 	<!-- We can load our events into here -->
 	<?php include_once("include/loadEvents.php"); ?>
-	</td><td><hr/><br/>Test Minutes</td>
+	</td><td>Test Minutes</td>
 	</tr>
   </table>
   

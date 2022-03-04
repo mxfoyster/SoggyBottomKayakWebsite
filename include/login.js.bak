@@ -19,7 +19,7 @@ function CallCustomAlert (message /*,refreshAfter*/)
 	var capsOffBox = document.getElementById("capsOffPlaceholder");
 	input.addEventListener("keyup", function(event) 
 	{
-		if (event.getModifierState('CapsLock')) 
+		if (event.getModifierState("CapsLock")) 
 		{
 			capsOnBox.style.display = "block";
 			capsOffBox.style.display = "none";
