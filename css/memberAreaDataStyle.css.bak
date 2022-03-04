@@ -1,0 +1,9 @@
+.memberDataTable
+{
+	width: 100%; 
+	text-align: center; 
+	border-style: inset;
+}
+th, td {
+  border: 1px solid;
+}
