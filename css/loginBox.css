@@ -1,4 +1,4 @@
-/* Our CSS for the custom alert box. Will be extracted to a separate sheey=t later me thinks :-D */
+/* Our CSS for the custom login box. Will be extracted to a separate sheey=t later me thinks :-D */
 .ourLoginBox
 {
 	position: absolute;
@@ -31,4 +31,13 @@
 	left: 50%;
 	transform: translate(-50%, -50%);/* Fast becoming by favourite bit of css allowing for dimensions of element */
 }
-/* End of custome alert box css */
+
+#capsAlert
+{
+	color: red;
+	display: none;
+	position: relative;
+	right: 180px;
+	bottom: 30px;
+}
+/* End of custom login box css */

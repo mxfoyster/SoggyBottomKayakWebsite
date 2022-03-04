@@ -102,10 +102,21 @@ body {
 	{
     grid-template-areas: 
       'header header header header header header' 
-      'left left left left left left' 
-      'middle middle middle middle middle middle' 
+      'middle middle middle middle middle middle'
+	  'left left left left left left'	  
       'right right right right right right' 
       'footer footer footer footer footer footer';
+	}
+	
+	.logoLeft
+	{
+		display: block;
+		margin: auto;
+	}
+
+	.logoRight
+	{
+		display: none;
 	}
 }
 
