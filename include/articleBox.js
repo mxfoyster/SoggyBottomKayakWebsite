@@ -8,9 +8,23 @@ articleBtn.addEventListener("click", () =>
 	});
 
 // open our article box
-function CallArticleBox (text)
+//This one takes some explaining.. Within loadNews.php and loadEvents.php we add an onClick event to a div
+//	that we build within the output for each row we display in the columns on the member's page. 
+//The onClick calls this function, passing it the id and table as parameters (also set within the div).
+//We can now use jQuery to call our loadArticle.php WITH qurey strings it uses to select the table and
+// 	ID. Now it knows what to search for and can display it in within this box...
+function CallArticleBox (id,table)
 {
+	//show the box
 	document.getElementById("ourArticleBoxCNT").style.visibility="visible";
-	document.getElementById("articleText").innerHTML = text;	
+	
+	//build our url with query string
+	let filename = "include/loadArticle.php?art=" + id + "&tab=" + table;
+	
+	 //use jQuery to go get the data 
+	 $(function()
+	  {
+		  $("#articleText").load(filename); 
+	  });
 }
 

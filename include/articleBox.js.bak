@@ -8,9 +8,19 @@ articleBtn.addEventListener("click", () =>
 	});
 
 // open our article box
-function CallArticleBox ()
+function CallArticleBox (id,table)
 {
 	document.getElementById("ourArticleBoxCNT").style.visibility="visible";
-	document.getElementById("articleText").innerHTML = "we will get our php to load the article here!";	
+	
+	
+	//build our url with query string
+	let filename = "include/loadArticle.php?art=" + id + "&tab=" + table;
+	 //document.getElementById("articleText").innerHTML = filename;
+	 //use jQuery to go get the data
+	 
+	 $(function()
+	  {
+		  $("#articleText").load(filename); 
+	  });
 }
 

@@ -24,7 +24,7 @@ if ( isset( $_SESSION['username'] ) )
 			//everything's OK, so we can display what data we have here
 			while ($row = mysqli_fetch_assoc($result))
 				{
-					echo "<div class =\"articles\" id=\"eventsArticle".$row['ID']."\"  onclick= \"CallArticleBox('" . $row['ID'] . "')\"><h4 class =\"articles\" >". $row['startDate']. "-" . $row['endDate'] ."</h4>". $row['title']. " <br/></div><hr/>";
+					echo "<div class =\"articles\" id=\"eventsArticle".$row['ID']."\"  onclick= \"CallArticleBox('" . $row['ID'] . "','events')\"><h4 class =\"articles\" >". $row['startDate']. "-" . $row['endDate'] ."</h4>". $row['title']. " <br/></div><hr/>";
 				}
 			return true;	
 		}
