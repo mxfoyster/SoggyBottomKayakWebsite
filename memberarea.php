@@ -74,7 +74,12 @@ if ( isset( $_SESSION['username'] ) ) {
 	
 	<!-- We can load our events into here -->
 	<?php include_once("include/loadEvents.php"); ?>
-	</td><td>Test Minutes</td>
+	</td>
+	<td>
+	
+	<!-- We can load our minutes here -->
+	<?php include_once("include/loadMinutes.php");?>
+	</td>
 	</tr>
   </table>
   

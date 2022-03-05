@@ -33,7 +33,7 @@ if ( isset( $_SESSION['username'] ) ) {
  
   <!-- This is our hidden article box -->
   <span class="ourArticleBox" id="ourArticleBoxCNT">
-	<span class="ourArticleText" id="alertText">Test Text in our alert box</span>
+	<span class="ourArticleText" id="articleText">Test Text in our alert box</span>
 	<input class = "ourArticleExit" type="button" name="closeArticle" value="EXIT"/>
   </span>
 
@@ -74,7 +74,13 @@ if ( isset( $_SESSION['username'] ) ) {
 	
 	<!-- We can load our events into here -->
 	<?php include_once("include/loadEvents.php"); ?>
-	</td><td>Test Minutes</td>
+	</td>
+	<td>
+	
+	<!-- We can load our minutes here -->
+	<?php include_once("include/loadMinutes.php");?>
+	Test Minutes
+	</td>
 	</tr>
   </table>
   
