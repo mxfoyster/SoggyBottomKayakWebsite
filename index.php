@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<title>Soggy Bottom Kayak Club</title>
+	<meta http-equiv="cache-control" content="no-cache">
 	<meta charset="UTF-8">
 	<meta name="description" content="">
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -39,6 +40,7 @@
 	  $(function()
 	  {
 		  $("#middle-dest").load("home.html"); 
+		  
 	  });
   </script>
   

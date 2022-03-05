@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
 	<title>Soggy Bottom Kayak Club</title>
+	<meta http-equiv="cache-control" content="no-cache">
 	<meta charset="UTF-8">
 	<meta name="description" content="">
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" type="text/css" href="css/menuStyle.css" />
 	<link rel="stylesheet" type="text/css" href="css/loginBox.css" />
 	<script src="include/jquery.js"></script> 
-	<script src="include/index.js" defer></script> 
+	<script src="include/login.js" defer></script> 
 
 </head>
 
@@ -39,6 +40,8 @@
 	  $(function()
 	  {
 		  $("#middle-dest").load("home.html"); 
+		  $(("#middle-dest").ajaxStop(function() 
+		  {location.reload();});
 	  });
   </script>
   
