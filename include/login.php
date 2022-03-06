@@ -20,7 +20,8 @@ try
 		if(empty($_POST["uName"]) || empty($_POST["pwd"]))
 		{
 			$error = "Both fields are required.";
-			echo $error;
+			//echo $error;
+			header("location: ../badlogin.html");
 		}
 		else
 		{
@@ -46,7 +47,7 @@ try
 				}
 				else //otherwise we re-direct
 				{
-					header("location: ../index.php");	
+					header("location: ../badlogin.html");	
 				}
 				return true;
 			}

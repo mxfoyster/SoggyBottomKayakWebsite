@@ -27,7 +27,7 @@ try
 			//get our login details
 			$uname = $_POST['uName'];
 			$rawpwd = $_POST['pwd'];
-			$pwd=sha1("\$penguin\$" . $rawpwd)
+			$pwd=sha1("\$penguin\$" . $rawpwd);
 	
 			//strip anything dodgy from our username and password
 			$uname = EscapeInput ($conn,$uname); 
@@ -46,7 +46,7 @@ try
 				}
 				else //otherwise we re-direct
 				{
-					header("location: ../index.php");	
+					header("location: ../badlogin.html");	
 				}
 				return true;
 			}
