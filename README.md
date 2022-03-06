@@ -1,4 +1,5 @@
-# Soggy Bottom Kayak Website
+# Soggy Bottom 
+# Kayak Website
 
 Welcome to my repository for my Kayak Club Website.
 
