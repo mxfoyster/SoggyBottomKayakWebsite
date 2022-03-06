@@ -1,3 +1,9 @@
+# Soggy Bottom Kayak Website
+
+Welcome to my repository for my Kayak Club Website.
+
+I have made this website to fulfil some of my learning objectives for my Level 3 Coding Concepts course. It is partial as the main purpose is as a discussion topic for software security, authentication, databases etc.
+I have just started to have a go with Github pages as an alternative to Github Wiki, it's new to me and I'll play around with it in the coming days. Therefore, don't eb surprised if you don't see much here to start with. 
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/mxfoyster/SoggyBottomKayakWebsite/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
