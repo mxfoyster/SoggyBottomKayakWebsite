@@ -1,9 +1,0 @@
-.menuOpt /* Grey out ALL the menu options */
-{
-	color: gray;
-}
-
-#login /* Then restore JUST the login option */
-{
-	color: darkblue;
-}
